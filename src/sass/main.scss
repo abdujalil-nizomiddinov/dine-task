@@ -417,7 +417,7 @@ body {
 .book {
   background: url("../pic/bg.png") no-repeat center/cover;
   .container {
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom: 250px;
     display: flex;
     justify-content: space-between;
@@ -498,11 +498,4 @@ body {
       }
     }
   }
-}
-input.error {
-  border: 1px solid red;
-}
-
-input.error::placeholder {
-  color: red;
 }
