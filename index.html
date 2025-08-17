@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
   <head>
     <title>Dine</title>
     <meta charset="UTF-8" />
@@ -8,12 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <!-- header start -->
     <header class="header">
       <div class="container">
-        <img class="logo" src="./src/pic/logo.svg" alt="img" />
+        <!-- logo -->
+        <a href="./index.html">
+          <img class="logo" src="./src/pic/logo.svg" alt="img" />
+        </a>
       </div>
     </header>
+    <!-- header end -->
+    <!-- main start -->
     <main>
+      <!-- home start  -->
       <section class="home">
         <div class="container">
           <div class="left">
@@ -24,28 +31,32 @@
                 Eat the freshest produce from the comfort of our farmhouse.
               </p>
             </div>
-            <button class="light_btn">BOOK A TABLE</button>
+            <a href="./src/html/book.html"
+              ><button class="light_btn">BOOK A TABLE</button></a
+            >
           </div>
           <div class="right">
             <div class="box">
-              <h2>03</h2>
+              <h2 id="days">00</h2>
               <p>days</p>
             </div>
             <div class="box">
-              <h2>13</h2>
+              <h2 id="hours">00</h2>
               <p>hours</p>
             </div>
             <div class="box">
-              <h2>33</h2>
+              <h2 id="minutes">00</h2>
               <p>minutes</p>
             </div>
             <div class="box">
-              <h2>23</h2>
+              <h2 id="seconds">00</h2>
               <p>seconds</p>
             </div>
           </div>
         </div>
       </section>
+      <!-- home end -->
+      <!-- enjoy start  -->
       <section class="enjoy container">
         <div class="first">
           <img class="first-img" src="./src/pic/Bitmap_1.png" alt="img" />
@@ -72,7 +83,98 @@
           <img class="second-img" src="./src/pic/Bitmap_2.png" alt="img" />
         </div>
       </section>
+      <!-- enjoy end -->
+      <!-- slider start  -->
+      <section class="slider">
+        <div class="container">
+          <div class="left">
+            <h2>A few highlights from our menu</h2>
+            <p>
+              We cater for all dietary requirements, but here’s a glimpse at
+              some of our diner’s favourites. Our menu is revamped every season.
+            </p>
+          </div>
+          <div class="right">
+            <div class="slide">
+              <button id="prev">
+                <img src="./src/pic/arrow_left.svg" alt="img" />
+              </button>
+              <img
+                class="slide-img"
+                id="slide-img"
+                src="./src/pic/Bitmap_3.png"
+                alt="img"
+              />
+              <button id="next">
+                <img src="./src/pic/arrow_right.svg" alt="img" />
+              </button>
+            </div>
+            <div class="title">
+              <h3 id="slide-title">Seared Salmon Fillet</h3>
+              <p id="slide-desc">
+                Our locally sourced salmon served with a refreshing buckwheat
+                summer salad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- slider end  -->
+      <!-- family start  -->
+      <section class="container family">
+        <img src="./src/pic/Bitmap_4.png" alt="img" />
+        <div class="title">
+          <div class="first">
+            <h2>Family Gathering</h2>
+            <p>
+              We love catering for entire families. So please bring everyone
+              along for a special meal with your loved ones. We’ll provide a
+              memorable experience for all.
+            </p>
+          </div>
+          <a href="./src/html/book.html"
+            ><button class="dark_btn">BOOK A TABLE</button></a
+          >
+          <ul class="second">
+            <li class="li_1">
+              <img src="./src/pic/line.png" alt="img" />
+              <span>FAMILY GATHERING</span>
+            </li>
+            <li class="li_2">SPECIAL EVENTS</li>
+            <li class="li_3">SOCIAL EVENTS</li>
+          </ul>
+        </div>
+      </section>
+      <!-- family end  -->
+      <!-- cont start  -->
+      <section class="footer_cont">
+        <div class="container">
+          <h2>Ready to make a reservation?</h2>
+          <a href="./src/html/book.html"
+            ><button class="light_btn">BOOK A TABLE</button></a
+          >
+        </div>
+      </section>
+      <!-- cont end -->
     </main>
-    <footer></footer>
+    <!-- main end -->
+    <!-- footer start  -->
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html"><img src="./src/pic/logo.svg" alt="img" /></a>
+        <ul class="title">
+          <li>Marthwaite, Sedbergh</li>
+          <li>Cumbria</li>
+          <li>+00 44 123 4567</li>
+        </ul>
+        <ul class="title">
+          <li>OPEN TIMES</li>
+          <li>MON - FRI: 09:00 AM - 10:00 PM</li>
+          <li>SAT - SUN: 09:00 AM - 11:30 PM</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="./src/js/app.js"></script>
   </body>
 </html>

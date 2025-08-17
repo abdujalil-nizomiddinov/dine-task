@@ -61,6 +61,7 @@ select {
   border: 1px solid white;
   color: white;
   background: transparent;
+  padding-top: 16px;
   &:hover {
     color: black;
     background: #fff;
@@ -79,6 +80,7 @@ select {
   border: 1px solid black;
   color: black;
   background: transparent;
+  padding-top: 16px;
   &:hover {
     color: white;
     background: #000;
@@ -114,9 +116,6 @@ body {
   .container {
     height: 650px;
     display: flex;
-  }
-  .light_btn {
-    padding-top: 16px;
   }
   .left {
     height: 400px;
@@ -191,8 +190,8 @@ body {
     &-img {
       width: 540px;
       height: 720px;
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
-        0 4px 6px -2px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
+        0 4px 6px -2px rgba(0, 0, 0, 0.2);
     }
     .title {
       display: flex;
@@ -218,11 +217,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 120px;
+    position: relative;
+    bottom: -80px;
     &-img {
       width: 540px;
       height: 720px;
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
-        0 4px 6px -2px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.3),
+        0 4px 6px -2px rgba(255, 255, 255, 0.1);
     }
     .title {
       display: flex;
@@ -243,4 +244,265 @@ body {
       }
     }
   }
+}
+
+// Slider
+.slider {
+  background: $color-cod;
+  .container {
+    display: flex;
+    align-items: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    justify-content: space-between;
+    color: #fff;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      img {
+        width: 120px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 4rem;
+        max-width: 500px;
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: 300;
+        max-width: 500px;
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .slide {
+        display: flex;
+        position: relative;
+        &-img {
+          width: 430px;
+          height: 330px;
+        }
+        button {
+          padding: 0 30px;
+          background: $color-cod;
+          border: none;
+          cursor: pointer;
+          &:active {
+            scale: 95%;
+          }
+        }
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 110px;
+        h3 {
+          font-weight: 600;
+          font-size: 32px;
+        }
+        p {
+          font-weight: 300;
+          max-width: 350px;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+// Family
+.family {
+  display: flex;
+  margin: 120px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+    .first {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: $color-cod;
+      h2 {
+        font-weight: 600;
+        font-size: 42px;
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        max-width: 400px;
+        line-height: 1.6rem;
+      }
+    }
+    .second {
+      display: flex;
+      flex-direction: column;
+      color: $color-cod;
+      gap: 20px;
+      letter-spacing: 3px;
+      .li_1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 85%;
+        position: relative;
+        left: -100px;
+        img {
+          position: relative;
+          left: -20px;
+        }
+      }
+      .li_2 {
+        opacity: 70%;
+        position: relative;
+        left: -20px;
+      }
+      .li_3 {
+        opacity: 40%;
+        position: relative;
+        left: -30px;
+      }
+    }
+  }
+}
+
+// Footer cont
+.footer_cont {
+  background: url("../pic/Bitmap_6.png") no-repeat center/cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 3rem;
+      color: #fff;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: $color-cod;
+  .container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    color: #fff;
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      li {
+        font-weight: 100;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 80%;
+      }
+    }
+  }
+}
+
+// --------------------------------------- book.html ---------------------------------------
+.book {
+  background: url("../pic/bg.png") no-repeat center/cover;
+  .container {
+    padding-top: 100px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    .left {
+      img {
+        margin-bottom: 200px;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+        h2 {
+          font-weight: 300;
+          font-size: 4.8rem;
+        }
+        p {
+          font-size: 1.3rem;
+          font-weight: 300;
+          max-width: 450px;
+          line-height: 1.6rem;
+        }
+      }
+    }
+    .right {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      width: 50%;
+      height: 100%;
+      padding: 65px;
+      input {
+        border: none;
+        border-bottom: 1px solid $color-gray;
+        font-size: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        &::placeholder {
+          padding: 0 10px;
+        }
+      }
+
+      .date {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        span {
+          color: $color-cod;
+          font-size: 18px;
+          margin-top: 25px;
+        }
+      }
+      .count {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+        border-bottom: 1px solid $color-cod;
+        padding: 0 30px;
+        padding-bottom: 15px;
+        button {
+          border: none;
+          font-size: 2rem;
+          cursor: pointer;
+          &:active {
+            scale: 95%;
+          }
+        }
+        p {
+          color: $color-cod;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+input.error {
+  border: 1px solid red;
+}
+
+input.error::placeholder {
+  color: red;
 }

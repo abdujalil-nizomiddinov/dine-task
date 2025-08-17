@@ -54,6 +54,7 @@ select {
   border: 1px solid white;
   color: white;
   background: transparent;
+  padding-top: 16px;
 }
 .light_btn:hover {
   color: black;
@@ -73,6 +74,7 @@ select {
   border: 1px solid black;
   color: black;
   background: transparent;
+  padding-top: 16px;
 }
 .dark_btn:hover {
   color: white;
@@ -106,9 +108,6 @@ body {
 .home .container {
   height: 650px;
   display: flex;
-}
-.home .light_btn {
-  padding-top: 16px;
 }
 .home .left {
   height: 400px;
@@ -183,7 +182,7 @@ body {
 .enjoy .first-img {
   width: 540px;
   height: 720px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 .enjoy .first .title {
   display: flex;
@@ -208,11 +207,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 120px;
+  position: relative;
+  bottom: -80px;
 }
 .enjoy .second-img {
   width: 540px;
   height: 720px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.3), 0 4px 6px -2px rgba(255, 255, 255, 0.1);
 }
 .enjoy .second .title {
   display: flex;
@@ -231,4 +232,265 @@ body {
   font-size: 1.6rem;
   line-height: 1.8rem;
   font-weight: 300;
+}
+
+.slider {
+  background: #111111;
+}
+.slider .container {
+  display: flex;
+  align-items: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  justify-content: space-between;
+  color: #fff;
+}
+.slider .container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.slider .container .left img {
+  width: 120px;
+  margin-bottom: 40px;
+}
+.slider .container .left h2 {
+  font-size: 4rem;
+  max-width: 500px;
+}
+.slider .container .left p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 300;
+  max-width: 500px;
+}
+.slider .container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.slider .container .right .slide {
+  display: flex;
+  position: relative;
+}
+.slider .container .right .slide-img {
+  width: 430px;
+  height: 330px;
+}
+.slider .container .right .slide button {
+  padding: 0 30px;
+  background: #111111;
+  border: none;
+  cursor: pointer;
+}
+.slider .container .right .slide button:active {
+  scale: 95%;
+}
+.slider .container .right .title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 110px;
+}
+.slider .container .right .title h3 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.slider .container .right .title p {
+  font-weight: 300;
+  max-width: 350px;
+  line-height: 1.4rem;
+}
+
+.family {
+  display: flex;
+  margin: 120px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.family .title {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: start;
+}
+.family .title .first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #111111;
+}
+.family .title .first h2 {
+  font-weight: 600;
+  font-size: 42px;
+}
+.family .title .first p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 400px;
+  line-height: 1.6rem;
+}
+.family .title .second {
+  display: flex;
+  flex-direction: column;
+  color: #111111;
+  gap: 20px;
+  letter-spacing: 3px;
+}
+.family .title .second .li_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 85%;
+  position: relative;
+  left: -100px;
+}
+.family .title .second .li_1 img {
+  position: relative;
+  left: -20px;
+}
+.family .title .second .li_2 {
+  opacity: 70%;
+  position: relative;
+  left: -20px;
+}
+.family .title .second .li_3 {
+  opacity: 40%;
+  position: relative;
+  left: -30px;
+}
+
+.footer_cont {
+  background: url("../pic/Bitmap_6.png") no-repeat center/cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer_cont .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_cont .container h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.footer {
+  background: #111111;
+}
+.footer .container {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+  color: #fff;
+}
+.footer .container .title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .container .title li {
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 80%;
+}
+
+.book {
+  background: url("../pic/bg.png") no-repeat center/cover;
+}
+.book .container {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.book .container .left img {
+  margin-bottom: 200px;
+}
+.book .container .left .title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+.book .container .left .title h2 {
+  font-weight: 300;
+  font-size: 4.8rem;
+}
+.book .container .left .title p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 450px;
+  line-height: 1.6rem;
+}
+.book .container .right {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  padding: 65px;
+}
+.book .container .right input {
+  border: none;
+  border-bottom: 1px solid #5c6779;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.book .container .right input::-moz-placeholder {
+  padding: 0 10px;
+}
+.book .container .right input::placeholder {
+  padding: 0 10px;
+}
+.book .container .right .date {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.book .container .right .date span {
+  color: #111111;
+  font-size: 18px;
+  margin-top: 25px;
+}
+.book .container .right .count {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  border-bottom: 1px solid #111111;
+  padding: 0 30px;
+  padding-bottom: 15px;
+}
+.book .container .right .count button {
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.book .container .right .count button:active {
+  scale: 95%;
+}
+.book .container .right .count p {
+  color: #111111;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+input.error::-moz-placeholder {
+  color: red;
+}
+
+input.error::placeholder {
+  color: red;
 }/*# sourceMappingURL=main.css.map */

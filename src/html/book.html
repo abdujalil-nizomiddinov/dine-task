@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dine booking</title>
+    <link rel="stylesheet" href="../sass/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- main start  -->
+    <main class="book">
+      <section class="container">
+        <div class="left">
+          <a href="../../index.html"><img src="../pic/logo.svg" alt="img" /></a>
+          <div class="title">
+            <h2>Reservations</h2>
+            <p>
+              We can’t wait to host you. If you have any special requirements
+              please feel free to call on the phone number below. We’ll be happy
+              to accommodate you.
+            </p>
+          </div>
+        </div>
+        <form class="right" id="reservationForm">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <label class="date">
+            <span>Pick a date</span>
+            <input type="datetime-local" required />
+          </label>
+
+          <div class="count">
+            <button type="button" id="minus">-</button>
+            <p id="people">0 - People</p>
+            <button type="button" id="plus">+</button>
+          </div>
+
+          <button type="submit" class="dark_btn">MAKE RESERVATION</button>
+        </form>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- footer start  -->
+    <footer class="footer">
+      <div class="container">
+        <a href="../../index.html"><img src="../pic/logo.svg" alt="img" /></a>
+        <ul class="title">
+          <li>Marthwaite, Sedbergh</li>
+          <li>Cumbria</li>
+          <li>+00 44 123 4567</li>
+        </ul>
+        <ul class="title">
+          <li>OPEN TIMES</li>
+          <li>MON - FRI: 09:00 AM - 10:00 PM</li>
+          <li>SAT - SUN: 09:00 AM - 11:30 PM</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script>
+      const form = document.getElementById("reservationForm");
+      const inputs = form.querySelectorAll("input[required]");
+      const minusBtn = document.getElementById("minus");
+      const plusBtn = document.getElementById("plus");
+      const peopleText = document.getElementById("people");
+
+      let count = 0;
+
+      minusBtn.addEventListener("click", () => {
+        if (count > 1) {
+          count--;
+          peopleText.textContent = `${count} - People`;
+        }
+      });
+
+      plusBtn.addEventListener("click", () => {
+        count++;
+        peopleText.textContent = `${count} - People`;
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let valid = true;
+
+        inputs.forEach((inp) => {
+          if (!inp.value.trim()) {
+            inp.classList.add("error");
+            valid = false;
+          } else {
+            inp.classList.remove("error");
+          }
+        });
+
+        if (valid) {
+          form.reset();
+          count = 0;
+          peopleText.textContent = `${count} - People`;
+        }
+      });
+    </script>
+  </body>
+</html>
