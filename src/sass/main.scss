@@ -110,6 +110,7 @@ body {
     justify-content: start;
   }
 }
+
 // Home
 .home {
   background: $color-cod;
@@ -413,6 +414,101 @@ body {
   }
 }
 
+// Media responsive
+@media (max-width: 1150px) {
+  .home {
+    .container {
+      flex-direction: column;
+      height: 100%;
+      gap: 200px;
+      padding-bottom: 200px;
+      .left {
+        width: 100%;
+      }
+      .right {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 65px 0;
+      }
+    }
+  }
+  .first {
+    flex-direction: column;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .slider {
+    .container {
+      flex-direction: column;
+      gap: 150px;
+      text-align: center;
+      .right {
+        .title {
+          padding-left: 0;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .family {
+    flex-direction: column;
+    .second {
+      .li_1 {
+        padding-left: 100px;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  .footer_cont {
+    .container {
+      flex-direction: column;
+      gap: 50px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    padding: 0;
+  }
+  .header {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .home {
+    .container {
+      .left {
+        div {
+          h1 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1.4rem;
+            max-width: 400px;
+          }
+        }
+      }
+    }
+  }
+  .title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
 // --------------------------------------- book.html ---------------------------------------
 .book {
   background: url("../pic/bg.png") no-repeat center/cover;
@@ -462,6 +558,13 @@ body {
           padding: 0 10px;
         }
       }
+      .error {
+        border-bottom: 1px solid red;
+        color: red;
+        &::placeholder {
+          color: red;
+        }
+      }
 
       .date {
         display: flex;
@@ -495,6 +598,95 @@ body {
           font-size: 18px;
           font-weight: bold;
         }
+      }
+    }
+  }
+}
+
+// Media responsive
+@media (max-width: 1280px) {
+  .book {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      .right {
+        width: 100%;
+      }
+      .left {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .book {
+    .container {
+      .right {
+        .date {
+          gap: 10px;
+        }
+      }
+    }
+  }
+  .footer {
+    font-size: 10px;
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .title {
+        gap: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .book {
+    .container {
+      padding: 20px;
+    }
+  }
+  .footer {
+    .container {
+      padding: 40px 20px;
+    }
+  }
+}
+@media (max-width: 530px) {
+  .book {
+    .container {
+      gap: 2px;
+      padding: 0;
+      .right {
+        padding: 25px;
+      }
+      .left {
+        .title {
+          h2 {
+            font-size: 3.2rem;
+          }
+          p {
+            font-size: 1rem;
+            max-width: 350px;
+          }
+        }
+        a {
+          img {
+            padding: 30px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      flex-direction: column;
+      gap: 40px;
+      font-size: 20px;
+      align-items: center;
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
     }
   }

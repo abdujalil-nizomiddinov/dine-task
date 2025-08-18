@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Dine booking</title>
+    <link rel="icon" href="../pic/icon.png">
     <link rel="stylesheet" href="../sass/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -22,16 +23,16 @@
           </div>
         </div>
         <form class="right" id="reservationForm">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
           <label class="date">
             <span>Pick a date</span>
-            <input type="datetime-local" required />
+            <input type="datetime-local" />
           </label>
 
           <div class="count">
             <button type="button" id="minus">-</button>
-            <p id="people">0 - People</p>
+            <p id="people">1 - People</p>
             <button type="button" id="plus">+</button>
           </div>
 
@@ -59,12 +60,12 @@
     <!-- footer end -->
     <script>
       const form = document.getElementById("reservationForm");
-      const inputs = form.querySelectorAll("input[required]");
+      const inputs = form.querySelectorAll("input");
       const minusBtn = document.getElementById("minus");
       const plusBtn = document.getElementById("plus");
       const peopleText = document.getElementById("people");
 
-      let count = 0;
+      let count = 1;
 
       minusBtn.addEventListener("click", () => {
         if (count > 1) {
@@ -93,7 +94,7 @@
 
         if (valid) {
           form.reset();
-          count = 0;
+          count = 1;
           peopleText.textContent = `${count} - People`;
         }
       });
