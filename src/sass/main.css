@@ -470,6 +470,78 @@ body {
     font-size: 2rem;
   }
 }
+@media (max-width: 550px) {
+  .home .container .right .box {
+    width: 80px;
+    height: 70px;
+  }
+  .home .container .right .box h2 {
+    font-size: 1.6rem;
+  }
+  .home .container .right .box p {
+    font-size: 8px;
+  }
+  .enjoy .first-img {
+    width: 350px;
+    height: 500px;
+  }
+  .enjoy .first .title {
+    gap: 20px;
+  }
+  .enjoy .first .title img {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  .enjoy .first .title h2 {
+    font-size: 2rem;
+  }
+  .enjoy .first .title p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .enjoy .second-img {
+    width: 350px;
+    height: 500px;
+  }
+  .enjoy .second .title {
+    gap: 20px;
+  }
+  .enjoy .second .title img {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  .enjoy .second .title h2 {
+    font-size: 2rem;
+  }
+  .enjoy .second .title p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .slider .container .left h2 {
+    font-size: 2rem;
+  }
+  .slider .container .left p {
+    font-size: 1rem;
+  }
+  .slider .container .right .slide {
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .container .right .slide-img {
+    width: 300px;
+    height: 200px;
+  }
+  .slider .container .right .slide button {
+    display: none;
+  }
+  .family img {
+    width: 350px;
+    height: 500px;
+  }
+  .footer_cont .container h2 {
+    font-size: 1.6rem;
+  }
+}
 .book {
   background: url("../pic/bg.png") no-repeat center/cover;
 }
